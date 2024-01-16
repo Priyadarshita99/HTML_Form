@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td 
+        {
+            border-collapse: collapse;   
+            border:1px solid black;
+        }
+        th,td 
+        {
+            padding: 15px;
+            font-family:cursive;
+        }
+    
+            h1
+            {
+                color: red;
+                text-decoration:none;
+            }
+            th
+            {
+                color: blue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+</head>
+<body>
+    <center>
+        <h1>Display_school</h1>
+        <table border="2px">
+            <tr>
+                <th>School Name</th>
+                <th>School Location</th>
+                <th>School Prinicipal</th>
+            </tr>
+            {% for so in schools %}
+            <tr>
+                <td>{{so.Sname}}</td>
+                <td>{{so.Slocation}}</td>
+                <td>{{so.Sprincipal}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

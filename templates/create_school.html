@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            color: blue;
+            background-color: darkkhaki;
+        }
+        h1
+        {
+            margin-top: 150px;
+        }
+        #sub
+        {
+            width:70px;
+            text-align: center;
+			margin-left: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Create School</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+        <table >
+            <tr>
+                <td><label for="sn">School name:</label></td>
+                <td><input type="text" name="sn" id="sn"></td>
+            </tr>
+            <tr>
+                <td><label for="sl">School Location:</label></td>
+                <td><input type="text" name="sl" id="sl"></td> 
+            </tr>
+            <tr>
+                <td><label for="pr">Prinicipal:</label></td>
+                <td><input type="text" name="pr" id="pr"> </td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="sub" ></td>
+            </tr>
+            
+        </table>
+
+
+        </form>
+
+
+    </center>
+</body>
+</html>
